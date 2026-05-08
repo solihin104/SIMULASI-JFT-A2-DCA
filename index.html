@@ -417,8 +417,7 @@ function calculateResult() {
     let score = 0;
     questions.forEach((q, i) => { if(answers[i] === q.correct) score += 2; });
 
-    // FITUR: Mengirim data ke Google Sheets agar Anda bisa memantau
-    const DATABASE_URL = "TEMPEL_URL_WEB_APP_ANDA_DISINI"; // Ganti dengan URL dari Apps Script tadi
+   const DATABASE_URL = "https://script.google.com/macros/s/AKfycbySe1kftvhuN6ZaLg4KK7BXUZuWrDC9LieEqt2VgNspJ6PDtgCJQd1AyT89NauQCfmcsw/exec";
 
     fetch(DATABASE_URL, {
         method: "POST",
